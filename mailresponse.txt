@@ -1,0 +1,23 @@
+Hi Team,
+
+Hoping you all are doing well and enjoying winter. 
+
+I worked on the data mentioned in the link provided by Nada Ibrahim. I worked on Fetch Rewards data (receipts, users, brand) 
+and below are my methodology and observations regarding the data. 
+
+Methodology 
+For my analysis, I have used R to read the files, modify its nested data structure to a columnar dataframe. Once the structure gets fixed, 
+run some sanity checks for quality and had a few observations that like to share with the team.   
+
+Observations
+
+1. Encountered duplicate users in the user table wondering what might be the case. 
+2. 186 brand codes that were present in the receipts table were missing the brand table. On checking visually for a few records like 7UP, Advil, etc
+are present in both the table but it still comes under the missing brand info list. 
+3. No style uniformity in saving 'brandcode' info in the table. Ideally, it should be numeric so that it can join easily with other tables.
+4. ID column start with _ that create problem in selecting column hence it index position has been used in the data processing   
+
+Love to discuss these points further over a call and can schedule a time to discuss further on these observations. 
+
+Thanks and Regards
+Sourav Karwa
